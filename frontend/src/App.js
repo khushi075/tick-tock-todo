@@ -21,9 +21,9 @@ function App() {
         </div>
         <div className="pages">
           <Routes>
-            <Route path="/home" element={user ? <Home /> : <Navigate to='/login' />} />
-            <Route path="/login" element={user ? <Navigate to='/home' /> : <Login />} />
-            <Route path="/signup" element={user ? <Navigate to='/home' /> : <SignUp />} />
+            <Route path="/" element={user ? <Home /> : <Navigate to='/login' />} />
+            <Route path="/login" element={user ? <Navigate to='/' /> : <Login />} />
+            <Route path="/signup" element={user ? <Navigate to='/' /> : <SignUp />} />
           </Routes>
         </div>
       </Router>
