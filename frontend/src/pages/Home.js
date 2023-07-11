@@ -10,7 +10,7 @@ function Home() {
 
     useEffect (() => {
         const fetchToDo = async () => {
-            const res = await fetch('https://ticktocktodo.onrender.com/api/todos',{
+            const res = await fetch('api/todos',{
                 headers: {
                     'Authorization' : `Bearer ${user.token}`
                 }

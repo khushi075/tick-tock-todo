@@ -10,7 +10,7 @@ function ToDosDetail ({toDo}) {
         if (!user) {
             return
         }
-        const res = await fetch(`https://ticktocktodo.onrender.com/api/todos/${toDo._id}`, {
+        const res = await fetch(`api/todos/${toDo._id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization' : `Bearer ${user.token}`
