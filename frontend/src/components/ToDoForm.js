@@ -20,7 +20,7 @@ function ToDoForm () {
         }
         
         const toDo = { title, completed, descr }
-        const res = await fetch('/api/todos', {
+        const res = await fetch('https://ticktocktodo.onrender.com/api/todos', {
             method: 'POST',
             body: JSON.stringify(toDo),
             headers: { 
